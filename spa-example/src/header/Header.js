@@ -1,12 +1,13 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "./headerstyles.css";
-/*
-casdkjasfas df
-asdfkadfasdf
-asdfasdfdsf
-*/
-export default class Header extends Component {
+
+class Header extends Component {
+  constructor(props) {
+    super(props);
+    console.log("Header", this.props);
+  }
   render() {
     return (
       <div className="header main-header navbar navbar-expand navbar-white navbar-light">
@@ -23,7 +24,7 @@ export default class Header extends Component {
           </li>
           <li className="nav-item d-none d-sm-inline-block">
             <Link to="/posts" className="nav-link">
-              Posts
+              Posts ({this.props.posts.length})
             </Link>
           </li>
           <li className="nav-item d-none d-sm-inline-block">
@@ -41,3 +42,9 @@ export default class Header extends Component {
     );
   }
 }
+
+const mapStatsToProps = (stats) => ({
+  posts: stats.posts,
+});
+
+export default connect(mapStatsToProps, null)(Header);

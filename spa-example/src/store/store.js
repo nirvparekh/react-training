@@ -1,7 +1,13 @@
-import { createStore } from "redux";
-import { postsReducer } from "./reducer";
+import { createStore, combineReducers } from "redux";
+import { postsReducer } from "./postReducer";
+import { authReducer } from "./authReducer";
 
-export const store = createStore(postsReducer);
+const rootReducer = combineReducers({
+  posts: postsReducer,
+  authRed: authReducer,
+});
+
+export const app_store = createStore(rootReducer);
 
 // GET_POSTS
 // my store will give me data

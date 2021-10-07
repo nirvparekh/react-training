@@ -6,8 +6,8 @@ import AboutUs from "./about-us/AboutUs";
 import Contact from "./contact/Contact";
 import Homepage from "./homepage/Homepage";
 import Testimonials from "./testimonials/Testimonials";
-import List from "./products/List";
 import SingleProduct from "./products/SingleProduct";
+import Posts from "./products";
 
 // Functional component:: React v16.8+
 function App() {
@@ -32,7 +32,7 @@ function App() {
 
           {/* Route for /products */}
           <Route path="/posts">
-            <List />
+            <Posts />
           </Route>
 
           {/* Route for /contact */}
