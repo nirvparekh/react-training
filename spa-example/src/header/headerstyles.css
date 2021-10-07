@@ -1,0 +1,28 @@
+.header {
+  background-color: #fff;
+  color: #1f2d3d;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  padding: 0.5rem 0.5rem;
+}
+
+.navbar-nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.5);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  height: 2.5rem;
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+}

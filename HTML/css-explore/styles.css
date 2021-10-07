@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background: rgb(240, 240, 240);
+  padding: 50px;
+}
+.dummytext {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+div {
+  margin-top: 10px;
+}
+
+.list-items {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  margin: 0 5px;
+}
+
+.keyboard {
+  background: rgb(84, 148, 233);
+}
+
+ul {
+  box-sizing: border-box;
+  display: flex;
+  list-style-type: none;
+}
+div#listtags {
+  padding: 30px;
+  border: 1px solid;
+  position: sticky;
+  top: 0;
+}
+div#listtags ul {
+  border: 2px solid #11c359;
+  
+}
+#listtags ul li.close {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
